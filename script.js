@@ -1,13 +1,5 @@
 const header = document.getElementById('main-header');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    header.classList.add('small');
-  } else {
-    header.classList.remove('small');
-  }
-});
-
 // Mobile menu toggle with accessibility updates
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.getElementById('nav-menu');
