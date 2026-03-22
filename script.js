@@ -17,6 +17,7 @@ if(hamburger && navMenu) {
     const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
     hamburger.setAttribute('aria-expanded', !isExpanded);
     navMenu.classList.toggle('active');
+    document.body.classList.toggle("menu-open");
   });
 
   // Close menu when clicking a link (mobile)
@@ -24,6 +25,7 @@ if(hamburger && navMenu) {
     link.addEventListener('click', () => {
       navMenu.classList.remove('active');
       hamburger.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove("menu-open");
     });
   });
 }
